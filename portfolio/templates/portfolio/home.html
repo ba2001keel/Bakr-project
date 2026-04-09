@@ -1,0 +1,45 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}الرئيسية - مستشار في إدارة الأعمال والمحاسبة{% endblock %}
+
+{% block content %}
+<section class="hero bg-primary text-white text-center py-5">
+    <div class="container">
+        <img src="{% static 'portfolio/profile.jpg' %}" alt="صورة شخصية" class="rounded-circle mb-4" width="150">
+        <h1> بكر الادريسي</h1>
+        <h1>مستشار في إدارة الأعمال والمحاسبة</h1>
+        <p class="lead">أساعد الشركات الناشئة والأفراد على تحسين الأداء المالي واتخاذ قرارات استراتيجية ناجحة</p>
+        <a href="{% url 'contact' %}" class="btn btn-light btn-lg me-2">اطلب استشارة</a>
+        <a href="https://wa.me/716289918" class="btn btn-success btn-lg">تواصل عبر واتساب</a>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <h2>ماذا أقدم لك؟</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>رؤية مالية واضحة</h3>
+                <p>أساعدك في فهم وضعك المالي بشكل كامل.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>تجنب الخسائر</h3>
+                <p>نصائح لتجنب الأخطاء المالية الشائعة.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>بدء مشروع صحيح</h3>
+                <p>دعم لبدء مشروعك بطريقة مستدامة.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container text-center">
+        <h2>لماذا تختارني؟</h2>
+        <p>خبرة في المجال، نهج عملي، وتركيز على نتائج ملموسة.</p>
+        <a href="{% static 'portfolio/cv.pdf' %}" class="btn btn-primary" target="_blank" rel="noopener" download>تحميل السيرة الذاتية</a>
+    </div>
+</section>
+{% endblock %}

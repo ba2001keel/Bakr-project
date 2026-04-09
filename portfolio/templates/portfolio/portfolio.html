@@ -1,0 +1,33 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}الأعمال{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <h1>نماذج الأعمال</h1>
+        <p>إليك بعض النماذج الاحترافية للتقارير والتحاليل التي أقوم بها:</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">نموذج تقرير مالي</h5>
+                        <p class="card-text">مثال على تقرير مالي شامل لشركة صغيرة.</p>
+                        <a href="{% static 'portfolio/sample_report.pdf' %}" class="btn btn-primary" target="_blank" rel="noopener" download>عرض التقرير</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">تحليل مشروع افتراضي</h5>
+                        <p class="card-text">دراسة جدوى وتحليل مالي لمشروع تجاري.</p>
+                        <a href="{% static 'portfolio/sample_analysis.pdf' %}" class="btn btn-primary" target="_blank" rel="noopener" download>عرض التحليل</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
